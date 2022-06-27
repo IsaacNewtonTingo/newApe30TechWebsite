@@ -1,0 +1,124 @@
+{%extends 'base.html'%} 
+{% load static %}
+{%block content%}
+
+<title>{%block title%}Hire Ape 30 technologies{%endblock%} </title>
+
+    <section class="reachUs">
+      <div class="leftTees">
+        <h1 id="webUI">1. Web UI/UX design</h1>
+        <h4>
+          We use figma in the design of web interfaces. Different websites have
+          different designs and the complexity of your website will definitely
+          affect the cost. We are more than capable to present to you the
+          perfect unique designs with a great user experience. With the help of
+          our talented team, we will make your dreams come true
+        </h4>
+        <h1 id="webDev">2. Web development</h1>
+        <h4>
+          For front end web development, we use html, css and javascript. We can
+          also use tools like Wix or wordpress if the client wants us to. We use
+          Django for our backend and database. With all these tools and by the
+          help of our programmers, we are able to deliver scalable and
+          responsive websites. The content and nature of your website determines
+          the cost. reach out to us so we can discuss your project.
+        </h4>
+        <h1 id="mobileUI">3. Mobile app UI/UX design</h1>
+        <h4>
+          The disign of mobile application user interface is also done by the
+          help of figma. The complexity of your application design will
+          definitely affect the cost. We are more than capable to present to you
+          the perfect unique designs with a great user experience. With the help
+          of our talented team, we will make your dreams come true
+        </h4>
+        <h1 id="mobileDev">4. Mobile app development</h1>
+        <h4>
+          React native framework is what we use for front-end mobile application
+          development. For back-end, we use NodeJs and our databases are mainly
+          MongoDB and Firebase. We are able to develop cross-platform native
+          mobile applications by writing the code once. Also, the time of
+          application developed determines the cost. Reach out to us and let's
+          discuss.
+        </h4>
+      </div>
+
+      {% if name %}
+      <div class="formDivHire">
+        <h6 class="success">Submitted successfully</h6>
+        <h1>What's in your mind?</h1>
+        <h4>Drop your details below. We typically respond within an hour</h4>
+
+        <form action="" method="post">
+          {% csrf_token %}
+          <label for="name">Name *</label>
+          <input type="text" name="name" placeholder="e.g John Doe" required />
+          <label for="email">Email *</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="e.g john@gmail.com"
+            required
+          />
+          <label for="phone">Phone number *</label>
+          <input
+            type="tel"
+            name="phoneNumber"
+            placeholder="e.g +254724753175"
+            required
+          />
+          <label for="message">Message *</label>
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            required
+            placeholder="Your message here"
+          ></textarea>
+
+          <input class="subBtn" type="submit" />
+        </form>
+      </div>
+
+      {% else %}
+
+      <div class="formDivHire">
+        <h1>What's in your mind?</h1>
+        <h4>Drop your details below. We typically respond within an hour</h4>
+
+        <form action="" method="post">
+          {% csrf_token %}
+          <label for="name">Name *</label>
+          <input type="text" name="name" placeholder="e.g John Doe" required />
+          <label for="email">Email *</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="e.g john@gmail.com"
+            required
+          />
+          <label for="phoneNumber">Phone number *</label>
+          <input
+            type="tel"
+            name="phoneNumber"
+            placeholder="e.g +254724753175"
+            required
+          />
+          <label for="message">Message *</label>
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            required
+            placeholder="Your message here"
+          ></textarea>
+
+          <input class="subBtn" type="submit" />
+        </form>
+      </div>
+      {% endif %}
+    </section>
+
+{%endblock%}
+  

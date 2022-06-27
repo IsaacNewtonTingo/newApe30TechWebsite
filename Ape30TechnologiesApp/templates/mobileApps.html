@@ -1,0 +1,48 @@
+{%extends 'base.html'%} 
+{% load static %}
+{%block content%}
+
+    <title>{%block title%}Mobile apps || Ape 30 technologies{%endblock%} </title>
+
+    <section class="apps">
+      <div id="myDoctor" class="myDoc">
+        <h1><span>"My Doctor"</span> Mobile Application</h1>
+        <p>
+          This is a self-diagnosis mobile application. Users enter their signs
+          and symptoms and in return, the application displays their potential
+          ailment. Additionally, users can search for nearest ambulances and
+          health facilities. During signup, users add next of kin contact
+          details that they are able to cantact during and emergency. Their is
+          also a records section where users can record the hospitals visited
+          and ambulance services used.
+        </p>
+
+        <div class="myDoctor">
+          <img src="{% static 'images/IMG_2408.PNG' %}" alt="my Doctor app ape 30 technologies"> 
+          <img src="{% static 'images/IMG_2409.PNG' %}" alt="my Doctor app ape 30 technologies"> 
+          <img src="{% static 'images/IMG_2411.PNG' %}" alt="my Doctor app ape 30 technologies">
+          <img src="{% static 'images/IMG_2412.PNG' %}" alt="my Doctor app ape 30 technologies">
+        </div>
+      </div>
+
+      <h1 id="churchSec">
+        <span>"St. Peters, Dioces"</span> Mobile Application (Still building)
+      </h1>
+      <p>
+        This is a church mobile application. Members are able to create an
+        acoount and interact with the application. There is section where they
+        get "Today's reading" which is posted by the admin. Every day, the
+        admin, who is an official of the church, updates the readings. Admin can
+        also post announcements that will be visible to the users. They can join
+        different groups availble and can also give tithe, offering and a
+        donation via the application.
+      </p>
+      <div class="myDoctor">
+        <img src="{% static 'images/IMG_2415.PNG' %}" alt="church app ape 30 technologies"> 
+        <img src="{% static 'images/IMG_2416.PNG' %}" alt="church app ape 30 technologies"> 
+        <img src="{% static 'images/IMG_2417.PNG' %}" alt="church app ape 30 technologies"> 
+        <img src="{% static 'images/IMG_2419.PNG' %}" alt="church app ape 30 technologies">
+      </div>
+    </section>
+
+{%endblock%}
