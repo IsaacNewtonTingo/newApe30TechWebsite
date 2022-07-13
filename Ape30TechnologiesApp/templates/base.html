@@ -46,10 +46,12 @@
       <nav class="menuItems" id="menuList">
         <ul>
           <li><a href="/"> Home</a></li>
-          <li><a href="#aboutUs"> About us</a></li>
-          <li><a href="#ourWork"> Our work</a></li>
-          <li><a href="contact-ape-30-technologies"> Contact us</a></li>
-          <li><a href="hire-ape-30-technologies"> Hire us</a></li>
+          <li><a href="{%url 'home'%}#aboutUs"> About us</a></li>
+          <li><a href="{%url 'home'%}#ourWork"> Our work</a></li>
+          <li>
+            <a href="{%url 'contact-ape-30-technologies'%}"> Contact us</a>
+          </li>
+          <li><a href="{%url 'hire-ape-30-technologies'%}"> Hire us</a></li>
         </ul>
       </nav>
     </header>

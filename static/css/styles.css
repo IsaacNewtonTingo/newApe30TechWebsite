@@ -120,6 +120,7 @@ nav {
   box-shadow: white 2px 2px 5px;
   margin-top: 40px;
   cursor: pointer;
+  border: none;
 }
 .mainBtn a {
   text-decoration-line: none;
@@ -606,6 +607,7 @@ footer a:hover {
   box-shadow: white 2px 2px 5px;
   margin-top: 40px;
   cursor: pointer;
+  border: none;
 }
 .reachUs h4 {
   color: white;
@@ -965,7 +967,7 @@ footer a:hover {
     display: block;
     color: white;
   }
-  
+
   #menuList {
     overflow: hidden;
     transition: 0.5s;

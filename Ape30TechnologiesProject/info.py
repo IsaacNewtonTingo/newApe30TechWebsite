@@ -1,4 +1,10 @@
-EMAIL_HOST = 'smtp.mailtrap.io'
-EMAIL_HOST_USER = 'a2cd462f507e5c'
-EMAIL_HOST_PASSWORD = '0f24aec9be8cdc'
-EMAIL_PORT = '2525'
+import os
+from django.conf.global_settings import EMAIL_USE_SSL
+from dotenv import load_dotenv
+
+load_dotenv()
+EMAIL_USE_SSL = True
+EMAIL_HOST = os.getenv("EMAIL_HOST")
+EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD")
+EMAIL_PORT = os.getenv("EMAIL_PORT")
